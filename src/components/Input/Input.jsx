@@ -16,6 +16,7 @@ const Input = (props) => {
       if(props.valor){
         setValue(text);
         if (text !== '') {
+          console.log(value)
           setIsActive(true);
           setDatePicker("showDatePicker")          
         } else {
