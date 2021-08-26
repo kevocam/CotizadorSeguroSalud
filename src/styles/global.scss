@@ -1,5 +1,29 @@
 $colorPrimary: #2F80ED;
-$colorSecundary: #a0a5b9;
+$colorSecundary: #58595d;
+$colorSuccess:#83cc5e;
 $black:rgb(8, 8, 8);
-$bold:500;
+$bold:600;
 $ligth:300;
+$fontPrimary:'Lato', sans-serif;
+
+@mixin baseImg {    
+    background-image: url('../img/Base.png');        
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+@mixin titlePrincipal ($size:2.8rem){    
+        font-size: $size;    
+        font-weight: $ligth;
+        margin:0px;    
+        color:$colorSecundary;
+        span{            
+            font-weight: $bold;
+            color:$colorPrimary;
+        }   
+    
+}
+@mixin subTitle($size:1.6rem, $weight:$ligth){
+    font-size: $size;
+    font-weight: $weight;
+    color:$colorSecundary;
+}

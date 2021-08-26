@@ -1,0 +1,26 @@
+@import './global.scss';
+.containerLogin{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    grid-template-rows: 1fr 0.1fr;   
+    
+    &__advice{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    &__form{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        place-self: center;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
